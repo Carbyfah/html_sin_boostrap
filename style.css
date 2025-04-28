@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    text-align: center;
+    color: #334;
+}
+
+header {
+    background-color: #00acc1;
+    padding: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.galeria img {
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #00acc1;
+    border-radius: 8px;
+}
+
+.tablas-salud table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.tablas-salud th, .tablas-salud td {
+    border: 1px solid #00acc1;
+    padding: 8px;
+    background-color: #ffffff;
+}
+
+.tablas-salud th {
+    background-color: #b2ebf2;
+}
+
+.video-salud {
+    margin-top: 40px;
+}
+
+.video-salud video {
+    border: 2px solid #00acc1;
+    border-radius: 8px;
+}
+
+.texto-video {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #00acc1;
+    color: white;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+@media (max-width: 990px) {
+    .galeria {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 570px) {
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria img {
+        height: 200px;
+    }
+}
